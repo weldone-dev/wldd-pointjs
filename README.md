@@ -7,7 +7,7 @@
 Установка:
 ```bash
 npm install wldd-pointjs
-``
+```
 Пример использования:
 ```js
 import PointJS from "wldd-pointjs";
