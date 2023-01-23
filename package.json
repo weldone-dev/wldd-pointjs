@@ -1,0 +1,27 @@
+{
+  "name": "wldd-pointjs",
+  "version": "2.0.9",
+  "description": "HTML5 Game Engine for JavaScript",
+  "homepage": "https://mult-uroki.ru/pointjs",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weldone-dev/wldd-pointjs.git"
+  },
+  "authors": [
+    "Aleksandr Ptichkin (multuroki@gmail.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://t.me/PointJS"
+  },
+  "main": "pointjs.js",
+  "keywords": [
+    "pointjs",
+    "game",
+    "2d"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
