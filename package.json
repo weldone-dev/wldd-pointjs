@@ -2,26 +2,47 @@
   "name": "wldd-pointjs",
   "version": "2.0.9",
   "description": "HTML5 Game Engine for JavaScript",
+  "license": "MIT",
   "homepage": "https://mult-uroki.ru/pointjs",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weldone-dev/wldd-pointjs.git"
   },
-  "authors": [
-    "Aleksandr Ptichkin (multuroki@gmail.com)"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://t.me/PointJS"
-  },
-  "main": "pointjs.js",
+  "bugs": "https://t.me/PointJS",
   "keywords": [
     "pointjs",
     "game",
-    "2d"
+    "2d",
+    "engine"
+  ],
+  "authors": [
+    "Aleksandr Ptichkin (multuroki@gmail.com)"
+  ],
+  "type": "module",
+  "main": "./dist/bundle.min.js",
+  "module": "./src/point-js.js",
+  "types": "./src/types.d.ts",
+  "exports": {
+    ".": [
+      {
+        "types": "./src/types.d.ts",
+        "import": "./src/point-js.js",
+        "require": "./dist/bundle.min.js"
+      },
+      "./package.json",
+      "./dist/bundle.min.js"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.prod.config.js",
+    "dev": "rollup -c rollup.dev.config.js -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.19.1"
   }
 }
